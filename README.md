@@ -1,2 +1,2 @@
 # pag-hosp
- Primeiro repositório versionado
+ Primeiro repositório versionado!
