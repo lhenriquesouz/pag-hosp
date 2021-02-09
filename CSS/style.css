@@ -49,29 +49,28 @@ a:hover{
     display: none;
 }
 
-#btnsocial, #btnsocia,#btnsoci {
+#face, #insta,#yout {
     display: flex;
     border-radius: 50%;
     margin-right: 5px;
 }
 
-#btnsocial{
+#face{
     padding: 10px;
     background-color: rgb(31, 149, 245);
     color: #fff;
 }
-#btnsocia{
+#insta{
     padding: 10px;
     color: #fff;
     background: linear-gradient(29.61deg, #f38334 0%, #da2e7d 50.39%, #6b54c6 100%)
 }
 
-#btnsocia:hover, #btnsocial:hover, #btnsoci:hover{
-    padding: 10px;
+#face:hover, #insta:hover, #yout:hover{
     opacity: 0.7;
     
 }
-#btnsoci{
+#yout{
     padding: 10px;
     color: rgb(245, 38, 38);
     background-color: #fff;
@@ -97,5 +96,3 @@ a:hover{
     font-size: 18px;
     font-weight: bold;  
 }
-
-
