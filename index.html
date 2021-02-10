@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <title>Hospital</title>
+    <title>Hello, world!</title>
 <!-- Estilos customizados para esse template -->
     <link href="CSS/carousel.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -22,7 +22,7 @@
   </head>
   <body>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
             <div class="container">
               <div class="col-md-4">             
                 <a class="navbar-brand " href="#"><img class="img-fluid" id="logonav" src="./images/Logo.png" alt=""></a>
@@ -53,7 +53,7 @@
                   </li>
                
               </ul>
-              <div class="d-flex">
+              <div class="d-flex mr-4">
                 <a id="face" href="https://pt-br.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a id="insta" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a id="yout" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -121,25 +121,25 @@
   
           <!-- Três colunas de texto, abaixo do carousel -->
           <div class="row">
-            <div id="row-card" class="col-lg-4">
+            <div class="col-lg-4">
               <img class="rounded-circle" src="./images/images.png" alt="Generic placeholder image" width="140" height="140">
               <h2>Título</h2>
               <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-              <p><a class="btn btn-primary" href="#" role="button">View details »</a></p>
+              <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
-            <div id="row-card" class="col-lg-4">
+            <div class="col-lg-4">
               <img class="rounded-circle" src="./images/03-Mais-diferenciais-100x100.png" alt="Generic placeholder image" width="140" height="140">
               <h2>Título</h2>
               <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-              <p><a class="btn btn-primary" href="#" role="button">View details »</a></p>
+              <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
-            <div id="row-card" class="col-lg-4">
+            <div class="col-lg-4">
               <img class="rounded-circle" src="./images/super-mario.png" alt="Generic placeholder image" width="140" height="140">
               <h2>Título</h2>
               <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-              <p><a class="btn btn-primary" href="#" role="button">View details »</a></p>
+              <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
-          </div>
+          </div><!-- /.row -->
   
   
           <!-- COMEÇAM AS MENCIONADAS FEATUREZINHAS xD -->
@@ -261,7 +261,22 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-    
+    <script>
+      window.onscroll = function(){
+        scroll();
+      };
+      function scroll(){
+        let btn = document.getElementById("btnTop");
+        if(document.documentElement.scrollTop > 50){
+          btn.style.display = "block";
+        }else {
+          btn.style.display = "none";
+        }
+      }
+      function backToTop(){
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
