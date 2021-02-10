@@ -96,3 +96,16 @@ a:hover{
     font-size: 18px;
     font-weight: bold;  
 }
+
+.row{
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+}
+
+#row-card{
+    
+    border-radius: 8px;
+    padding: 5px;
+}
