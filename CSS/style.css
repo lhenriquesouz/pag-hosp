@@ -12,6 +12,7 @@ html{
 
 body{
     padding-bottom: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 a{
@@ -98,8 +99,12 @@ a:hover{
     background-color: rgba(105, 105, 105, 0.486);
 }
 
-.carousel-inner{
+.carousel-inner img{
     filter: brightness(58%);
+}
+
+.carousel-inner .carousel-caption{
+    
 }
 
 .navbar{
