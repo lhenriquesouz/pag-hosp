@@ -8,11 +8,8 @@ html{
     
 }
 
-
-
 body{
     padding-bottom: 0;
-    font-family: 'Roboto', sans-serif;
 }
 
 a{
@@ -26,14 +23,19 @@ a:hover{
 }
 
 #copy{
-    background-color: #29292b;
+    background-color: #29292bad;
+    color: rgb(133, 133, 133);
 }
+
+/*Mapa do footer*/
 
 #map-container{
     width: 100%;
     height: 240px;
     margin: 0 auto;
 }
+
+/*Botão para subir ao topo*/
 
 #btnTop{
     position: fixed;
@@ -50,29 +52,31 @@ a:hover{
     display: none;
 }
 
-#btnface, #btninsta,#btnyou {
+
+/*Rede social do Navbar*/
+
+#face, #insta,#yout {
     display: flex;
     border-radius: 50%;
     margin-right: 5px;
 }
 
-#btnface{
+#face{
     padding: 10px;
     background-color: rgb(31, 149, 245);
     color: #fff;
 }
-#btninsta{
+#insta{
     padding: 10px;
     color: #fff;
     background: linear-gradient(29.61deg, #f38334 0%, #da2e7d 50.39%, #6b54c6 100%)
 }
 
-#btnface:hover, #btninsta:hover, #btnyou:hover{
-    padding: 10px;
+#face:hover, #insta:hover, #yout:hover{
     opacity: 0.7;
     
 }
-#btnyou{
+#yout{
     padding: 10px;
     color: rgb(245, 38, 38);
     background-color: #fff;
@@ -86,9 +90,16 @@ a:hover{
     
 }
 
+/*Navbar com sticky*/
+
 .navbar-brand img{
     width: 95px;
     height: 87px;
+}
+
+.navbar{
+    background-color: #29292b;
+    padding: 0 16px;
 }
 
 .nav-item {
@@ -96,28 +107,23 @@ a:hover{
     font-weight: bold;  
 }
 
+nav.bg-dark{
+    background-color: transparent !important;
+    transition: 500ms;
+}
+
+nav.bg-dark.scrolled{
+    background-color: #29292b !important;
+    transition: 500ms;
+    padding-top: 10px;
+}
+
 .navbar-toggler{
-    background-color: rgba(105, 105, 105, 0.486);
+    background-color: #000;
 }
 
-.carousel-inner img{
-    filter: brightness(58%);
-}
+/*Conteudo das featurings*/
 
-.navbar{
-    padding: 0 16px;
+div.marketing{
+    padding-top: 1rem;
 }
-
-.navbar-brand{
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-dark .navbar-nav .nav-link{
-    color: rgb(250, 250, 250);
-    transition: 200ms;
-}
-.navbar-dark .navbar-nav .nav-link:hover{
-    color: rgb(31, 151, 250);
-}
-
